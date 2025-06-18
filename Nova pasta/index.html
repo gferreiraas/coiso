@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Gestão de Alunos</h1>
+
+        <!-- Formulário para adicionar aluno -->
+        <div class="add-student">
+            <input type="text" id="student-name" placeholder="Nome do Aluno" />
+            <button onclick="addStudent()">Adicionar Aluno</button>
+        </div>
+
+        <!-- Lista de alunos -->
+        <h2>Lista de Alunos</h2>
+        <ul id="student-list"></ul>
+    <tbody>
+        <!-- Botão para salvar a chamada -->
+        <button id="btnSalvar" onclick="salvarChamada()">Salvar Chamada</button>
+ 
+        <!-- Tabela para mostrar as presenças -->
+        <h2>Relatório de Presença</h2>
+        <table id="tabela-presenca">
+                    <th>Aluno</th>
+                    <th>Presente</th>
+        </table>
+ </tbody>
+        <!-- Seção para atribuição de nota -->
+        <h2>Atribuição de Notas</h2>
+        <div id="grade-section">
+            <label for="grade-select">Escolha um Aluno para Atribuir Nota:</label>
+            <select id="grade-select"></select>
+            <input type="number" id="grade-input" placeholder="Nota (0-10)" />
+            <button onclick="assignGrade()">Atribuir Nota</button>
+        </div>
+
+        <h2>Relatório de Notas</h2>
+        <ul id="grades-list"></ul>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
+
+
